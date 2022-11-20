@@ -16,3 +16,5 @@ statsmodels==0.13.5
 threadpoolctl==3.1.0
 wincertstore==0.2
 xgboost==1.7.1
+missingno
+plotly
