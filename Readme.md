@@ -23,16 +23,18 @@ Los datos se particionaron en 3 espacios o zonas: raw, trusted y refined, siguie
 - Refined: se almacenan los resultados o los datos utlizados en producción. Aquí se almacenan las predicciones realizadas por el modelo. 
 
 A continuación, se ejemplifica el esquema utlizado: 
-- data
-- - raw
-- - - datos_fuente.csv
-- - trusted
-- - - datos_agrupados.csv
-- - refined
-- - - predicciones.csv
+```
+├── data
+│   ├── raw
+│   ├── trusted
+│   ├── refined
+├── readme.md
+├── code
+├── notebooks
+└── .gitignore
+```
 
-
-
+En la carpeta *notebooks* se almacenan los jupyter notebooks empleados para le desarrollo del proyecto. Por su parte, la carpeta *code* almacena el código empleado. 
 
 
 #### **Bibliografía**
