@@ -24,14 +24,23 @@ Los datos se particionaron en 3 espacios o zonas: raw, trusted y refined, siguie
 
 A continuación, se ejemplifica el esquema utlizado: 
 ```
-├── data
-│   ├── raw
-│   ├── trusted
-│   ├── refined
-├── readme.md
+├── Readme.md
+├── requirements.txt
 ├── code
-├── notebooks
-└── .gitignore
+|        ├── preprocessing.py     
+├── data
+|        ├── raw
+|        |   ├── Dengue_Dataset(Medellin).csv
+|        |   ├── dengue_data_all_municipalities.csv    
+|        ├── refined
+|        ├── trusted
+|            ├── dengue_data.csv         
+└── notebooks
+|        ├── Data_Wrangling.ipynb
+|        ├── EDA1.ipynb
+|        ├── Model_Implementation.ipynb
+|        ├── preprocessing.ipynb
+
 ```
 
 En la carpeta *notebooks* se almacenan los jupyter notebooks empleados para el desarrollo del proyecto, el flujo de ejecución determinado es *preprocessing.ipynb* -> *Data_Wrangling.ipynb* -> *Model_Implementation.ipynb*, ya que de esta manera se realizó el trabajo del proyecto, no obstante, pueden correrse en el orden deseado. 
